@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#023976;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+#particles-js {
+	height: 100vh; 
+	width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+nav .nav-container {
+    display: flex;
+    align-items: center; /* Alineación vertical */
+    justify-content: space-between; /* Espacio entre el menú y la marca */
+}
+
+.menu {
+    display: flex; /* Alinear el menú en fila */
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out; /* Animación suave */
+}
+
+.menu li a:hover {
+    color: #b74b4b; /* Naranja brillante al pasar el mouse */
+}
+
+/* Nombre de la empresa centrado */
+.brand {
+    flex-grow: 1; /* Permite que la marca ocupe el espacio disponible */
+    text-align: center; /* Centrar el texto */
+}
+
+.company-name {
+    font-size: 2.5rem; /* Tamaño de fuente aumentado para el nombre de la empresa */
+    color: #b74b4b; /* Color base del nombre */
+    font-weight: bold; /* Hacer el texto más grueso */
+    background: linear-gradient(90deg, #b74b4b, #023976); /* Efecto de gradiente azul */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Hacer el texto transparente para el gradiente */
+    margin-left: -160px; /* Ajustar el margen para centrarlo más a la izquierda */
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+
+/* Logo a la derecha */
+.logo {
+    margin-left: 10px; /* Espaciado entre el texto y el logo */
+}
+
+.logo img {
+    height: 70px; /* Tamaño del logo */
+    width: auto;
+    border-radius: 50%;
+}
+
+/* Video de fondo */
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+/* Sección de Nosotros */
+#about {
+    padding: 120px 20px; /* Ajustar el espaciado para centrar más la sección */
+    text-align: center;
+    color: #fff; /* Color del texto en la sección */
+    flex-grow: 1; /* Permitir que la sección crezca y ocupe el espacio restante */
+}
+
+.about-content {
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente para mejorar la legibilidad */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+#about h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #b74b4b; /* Color del encabezado */
+}
+
+#about p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: #ddd; /* Color del texto */
+}
+
+.Logo-Cam-Secure {
+    border-radius: 50%;
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+

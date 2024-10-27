@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#023976;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+#particles-js {
+	height: 100vh; 
+	width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+nav .nav-container {
+    display: flex;
+    align-items: center; /* Alineación vertical */
+    justify-content: space-between; /* Espacio entre el menú y la marca */
+}
+
+.menu {
+    display: flex; /* Alinear el menú en fila */
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out; /* Animación suave */
+}
+
+.menu li a:hover {
+    color: #b74b4b; /* Naranja brillante al pasar el mouse */
+}
+
+/* Nombre de la empresa centrado */
+.brand {
+    flex-grow: 1; /* Permite que la marca ocupe el espacio disponible */
+    text-align: center; /* Centrar el texto */
+}
+
+.company-name {
+    font-size: 2.5rem; /* Tamaño de fuente aumentado para el nombre de la empresa */
+    color: #b74b4b; /* Color base del nombre */
+    font-weight: bold; /* Hacer el texto más grueso */
+    background: linear-gradient(90deg, #b74b4b, #023976); /* Efecto de gradiente azul */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Hacer el texto transparente para el gradiente */
+    margin-left: -160px; /* Ajustar el margen para centrarlo más a la izquierda */
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+
+/* Logo a la derecha */
+.logo {
+    margin-left: 150px; /* Espaciado entre el texto y el logo */
+}
+
+.logo img {
+    height: 100px; /* Tamaño del logo */
+    width: auto;
+    border-radius: 50%;
+}
+
+#hero {
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin-right: 10%;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra en el texto */
+    margin-left: 45%;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    border-radius: 4rem;
+    color: #b74b4b;
+    font-weight: 600;
+    border: 2px solid #b74b4b;
+    transition: 0.3s ease;
+    cursor: pointer;
+    margin-left: 45%;
+}
+
+.btn-primary:hover {
+    transform: scale3d(1.03);
+    background-color: #b74b4b;
+    color: black;
+    box-shadow: 0 0 25px #b74b4b;
+}
+
+/* Sección de características */
+#features {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+    padding: 0 20px;
+}
+
+.feature-box {
+    text-align: center;
+    width: 30%;
+    border: 2px solid #f39c12;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out; /* Animación al pasar el mouse */
+}
+
+.feature-box:hover {
+    transform: scale(1.05); /* Efecto de zoom suave */
+}
+
+.feature-box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.feature-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
